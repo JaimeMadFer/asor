@@ -1,0 +1,1 @@
+#include <stdio.h>#include <errno.h>#include <string.h>#include <sys/types.h>#include <unistd.h>int main(){        if (setuid(0) == -1)        {                printf("Error nº %i: %s\n", errno, strerror(errno));        }	return 1;}
