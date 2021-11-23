@@ -19,8 +19,8 @@ int main(int argc, char **argv)
                 perror(s);
        }
 
-		dup2(new_fd, old_fd);
-        dup2(fd_errores, old_fd);
+		//dup2(new_fd, old_fd);
+        //dup2(fd_errores, old_fd);
 
         return 0;
 }
