@@ -101,3 +101,31 @@ int main(int argc, char **argv)
         freeaddrinfo(res);
         return 0;
 }
+
+// T1:
+// $ ./ej5 :: 3000
+// BYTES: 2    HOST: ::ffff:192.168.0.1    SERV: 49716    PID: 21629
+// Fin hijo 21629
+// BYTES: 2    HOST: ::ffff:192.168.0.1    SERV: 49716    PID: 21630
+// Fin hijo 21630
+// BYTES: 2    HOST: ::ffff:192.168.0.1    SERV: 49716    PID: 21631
+// Fin hijo 21631
+// BYTES: 2    HOST: ::ffff:192.168.0.1    SERV: 49716    PID: 21632
+// Fin hijo 21632
+// BYTES: 2    HOST: ::ffff:192.168.0.1    SERV: 49716    PID: 21628
+// Fin hijo 21628
+
+// T2:
+// $ nc -u 192.168.0.1 3000
+// y
+// Opción incorrecta
+// d
+// 21/12/2021
+// t
+// 13:49:36
+// t
+// 13:49:37
+// d
+// 21/12/2021
+// p
+// Ncat: Connection refused.

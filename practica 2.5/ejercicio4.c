@@ -116,3 +116,10 @@ int main(int argc, char **argv)
 		freeaddrinfo(res);
         return 0;
 }
+
+// T1: $ ./ej4 :: 3000
+// T2: $ nc -u 192.168.0.1 3000
+// T1: t
+// T1: 18:30:53
+// T1: q
+// T1: Saliendo...
